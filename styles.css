@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;/*normal or italic or oblique*/
+    /* font-weight: 700; */
+    font-size: 16px;
+    line-height: 18.75px;
+    box-sizing: border-box;
+  }
+
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;} 
+  @media only screen and (max-width: 900px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+  .container .sidebar{
+    visibility:hidden;   
+  }
+  }
+  @media only screen and (max-width: 500px) {
+    [class*="col-"] {
+      width: 100%;
+    }
+    .container .sidebar{
+      visibility:hidden;
+        
+    }
+  }
+  /* [class*="col-"] {
+    float: left;
+  }  */
+  .sidebar ul {
+    list-style-type: none;/*kieu cua list co the la circle*/
+    margin: 0;
+    padding: 0;
+    background-color: #191718;
+    position: fixed;
+    height: 100%;/*khi cuon trang no van dung yen*/
+    overflow: auto;/*khi bi tran thi se cuon, scroll, hidden,auto,clip,visible (default tran ra ngoai ko gian cua no)*/
+    font-weight: bold;
+    display: block;
+  }
+  .sidebar ul li{
+    border-bottom:1px solid #5C5C5C
+  }
+  
+  .sidebar li a {
+    display: block;
+    color: #AAAAAA;
+    padding: 8px 16px;
+    text-decoration: none;/*gach vao chu*/
+  }
+  
+  .sidebar li a.active {
+    color: white;
+  }
+  
+  .sidebar li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  .content{
+    background-color: #FFFFFF;
+    color: #000000;
+    margin-left:8.33%;
+  }
+  .content .logo{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content .content-1 .group-1{
+    background-color:#EFEFEF ;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding:38px 0;
+  }
+  .content .content-1 .group-1 .title{
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .content .content-1 .group-1 .content-detail{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+  .content .content-1 .group-large{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-items: center;
+
+  }
+  .content .content-1 .group-large .group-2{
+    margin-right: 50px;
+  }
+  .content .content-1 .group-large .group-2 .title{
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .content .content-1 .group-large .group-2 .content-detail img{
+    width: 128px;
+    height: 128px;
+    float: left;
+  }
+  .footer{
+    border-top: 1px solid #DEDEDE ;
+    padding: 30px 129px;
+  }
+  .footer span{
+    font-weight: 400;
+    line-height: 19px;
+    color: #3E3E3E;
+  }
+  
+
